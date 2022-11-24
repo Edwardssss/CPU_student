@@ -1,0 +1,71 @@
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+# do cpu_top_run_msim_rtl_verilog.do
+# if ![file isdirectory cpu_top_iputf_libs] {
+# 	file mkdir cpu_top_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo"
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 00:10:11 on Nov 23,2022
+# vlog -reportprogress 300 D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo 
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# End time: 00:10:12 on Nov 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/ArithmeticUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 00:10:12 on Nov 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/ArithmeticUnit.v 
+# -- Compiling module ArithmeticUnit
+# 
+# Top level modules:
+# 	ArithmeticUnit
+# End time: 00:10:12 on Nov 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim {D:/Desktop/FPGA/cputop_student/simulation/modelsim/ArithmeticUnit.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 00:10:12 on Nov 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim" D:/Desktop/FPGA/cputop_student/simulation/modelsim/ArithmeticUnit.vt 
+# -- Compiling module ArithmeticUnit_vlg_tst
+# 
+# Top level modules:
+# 	ArithmeticUnit_vlg_tst
+# End time: 00:10:12 on Nov 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ArithmeticUnit_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "cpu_top_run_msim_rtl_verilog.do" 
+# Start time: 00:10:14 on Nov 23,2022
+# Loading work.ArithmeticUnit_vlg_tst
+# Loading work.ArithmeticUnit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# WARNING: No extended dataflow license exists
+# End time: 00:11:57 on Nov 23,2022, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 1
