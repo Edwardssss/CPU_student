@@ -70,12 +70,26 @@ ArithmeticUnit i1 (
 );
 initial                                                
 begin                                                  
+A = 16'b1010111100001001;
+B = 16'b0101111100001111;
+cin = 0;
 
 
-end                                                    
-always
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 0;shlB = 0;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 0;
 
+#10 B15to0 = 1;AandB = 0;AorB = 0;notB = 0;shlB = 0;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 1;AorB = 0;notB = 0;shlB = 0;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 1;notB = 0;shlB = 0;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 1;shlB = 0;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 0;shlB = 1;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 0;shlB = 0;shrB = 1;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 0;shlB = 0;shrB = 0;AaddB = 1;AsubB = 0;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 0;shlB = 0;shrB = 0;AaddB = 0;AsubB = 1;AmulB = 0;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 0;shlB = 0;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 1;AcmpB = 0;
+#10 B15to0 = 0;AandB = 0;AorB = 0;notB = 0;shlB = 0;shrB = 0;AaddB = 0;AsubB = 0;AmulB = 0;AcmpB = 1;
 
-end                                                    
+#10 $stop;
+
+end
 endmodule
 
