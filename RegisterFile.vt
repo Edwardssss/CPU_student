@@ -1,0 +1,121 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "11/24/2022 16:05:48"
+                                                                                
+// Verilog Test Bench template for design : RegisterFile
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module RegisterFile_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [1:0] Laddr;
+reg RFHwrite;
+reg RFLwrite;
+reg [1:0] Raddr;
+reg clk;
+reg [15:0] in;
+// wires                                               
+wire [15:0]  Lout;
+wire [15:0]  Rout;
+
+// assign statements (if any)                          
+RegisterFile i1 (
+// port map - connection between master ports and signals/registers   
+	.Laddr(Laddr),
+	.Lout(Lout),
+	.RFHwrite(RFHwrite),
+	.RFLwrite(RFLwrite),
+	.Raddr(Raddr),
+	.Rout(Rout),
+	.clk(clk),
+	.in(in)
+);
+
+
+//以下是testbench
+parameter PERIOD=10;//宏定义
+
+initial
+begin
+clk=1'b0;
+forever #(PERIOD/2)
+clk=~clk;//不断反转clk
+end
+
+
+initial
+begin
+in = 16'b1111000011110000;
+
+//标志位清零
+RFHwrite = 0;
+RFLwrite = 0;
+
+#10;                                           
+in = 16'b1010101010101010;Laddr = 2'b00;Raddr = 2'b00;RFHwrite = 1'b1;RFLwrite = 1'b1;
+#10; 
+in = 16'b1111000011110000;Laddr = 2'b00;Raddr = 2'b00;RFHwrite = 1'b0;RFLwrite = 1'b0;
+#10;
+in = 16'b1111000011110000;Laddr = 2'b00;Raddr = 2'b00;RFHwrite = 1'b0;RFLwrite = 1'b1;
+#10;
+in = 16'b1111000011110000;Laddr = 2'b00;Raddr = 2'b00;RFHwrite = 1'b1;RFLwrite = 1'b0;
+#10;
+in = 16'b1111000011110000;Laddr = 2'b00;Raddr = 2'b00;RFHwrite = 1'b1;RFLwrite = 1'b1;
+#10;
+in = 16'b0000000000000000;Laddr = 2'b01;Raddr = 2'b01;RFHwrite = 1'b1;RFLwrite = 1'b1; 
+#10;
+in = 16'b1111000011110000;Laddr = 2'b01;Raddr = 2'b01;RFHwrite = 1'b0;RFLwrite = 1'b0;
+#10;
+in = 16'b1111000011110000;Laddr = 2'b01;Raddr = 2'b01;RFHwrite = 1'b0;RFLwrite = 1'b1;
+#10;
+in = 16'b1111000011110000;Laddr = 2'b01;Raddr = 2'b01;RFHwrite = 1'b1;RFLwrite = 1'b0;
+#10;
+in = 16'b1111000011110000;Laddr = 2'b01;Raddr = 2'b01;RFHwrite = 1'b1;RFLwrite = 1'b1;
+#10;
+in = 16'b1111111111111111;Laddr = 2'b10;Raddr = 2'b10;RFHwrite = 1'b1;RFLwrite = 1'b1;      
+#10;
+in = 16'b1111000011110000;Laddr = 2'b10;Raddr = 2'b10;RFHwrite = 1'b0;RFLwrite = 1'b0; 
+#10;
+in = 16'b1111000011110000;Laddr = 2'b10;Raddr = 2'b10;RFHwrite = 1'b0;RFLwrite = 1'b1; 
+#10;
+in = 16'b1111000011110000;Laddr = 2'b10;Raddr = 2'b10;RFHwrite = 1'b1;RFLwrite = 1'b0; 
+#10;
+in = 16'b1111000011110000;Laddr = 2'b10;Raddr = 2'b10;RFHwrite = 1'b1;RFLwrite = 1'b1; 
+#10;
+in = 16'b0101010101010101;Laddr = 2'b11;Raddr = 2'b11;RFHwrite = 1'b1;RFLwrite = 1'b1; 
+#10;
+in = 16'b1111000011110000;Laddr = 2'b11;Raddr = 2'b11;RFHwrite = 1'b0;RFLwrite = 1'b0; 
+#10;
+in = 16'b1111000011110000;Laddr = 2'b11;Raddr = 2'b11;RFHwrite = 1'b0;RFLwrite = 1'b1; 
+#10;
+in = 16'b1111000011110000;Laddr = 2'b11;Raddr = 2'b11;RFHwrite = 1'b1;RFLwrite = 1'b0; 
+#10; 
+in = 16'b1111000011110000;Laddr = 2'b11;Raddr = 2'b11;RFHwrite = 1'b1;RFLwrite = 1'b1; 
+#10;
+$stop;
+
+end                              
+endmodule
+
