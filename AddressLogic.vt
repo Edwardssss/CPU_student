@@ -1,0 +1,71 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "11/26/2022 13:28:37"
+                                                                                
+// Verilog Test Bench template for design : AddressLogic
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module AddressLogic_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [7:0] Iside;
+reg PCplus1;
+reg PCplusI;
+reg [15:0] PCside;
+reg ResetPC;
+reg Rplus0;
+reg RplusI;
+reg [15:0] Rside;
+// wires                                               
+wire [15:0]  ALout;
+
+// assign statements (if any)                          
+AddressLogic i1 (
+// port map - connection between master ports and signals/registers   
+	.ALout(ALout),
+	.Iside(Iside),
+	.PCplus1(PCplus1),
+	.PCplusI(PCplusI),
+	.PCside(PCside),
+	.ResetPC(ResetPC),
+	.Rplus0(Rplus0),
+	.RplusI(RplusI),
+	.Rside(Rside)
+);
+initial                                                
+begin
+	PCside <= 16'b1011_1010_1010_1011;
+	Rside <= 16'b1011_1010_1010_0100;
+	Iside <= 8'b1001_0010;
+	#5 ResetPC <= 0;PCplusI <= 0;PCplus1 <= 0;RplusI <= 0;Rplus0 <= 0;
+	#5 ResetPC <= 1;PCplusI <= 0;PCplus1 <= 0;RplusI <= 0;Rplus0 <= 0;
+	#5 ResetPC <= 0;PCplusI <= 1;PCplus1 <= 0;RplusI <= 0;Rplus0 <= 0;
+	#5 ResetPC <= 0;PCplusI <= 0;PCplus1 <= 1;RplusI <= 0;Rplus0 <= 0;
+	#5 ResetPC <= 0;PCplusI <= 0;PCplus1 <= 0;RplusI <= 1;Rplus0 <= 0;
+	#5 ResetPC <= 0;PCplusI <= 0;PCplus1 <= 0;RplusI <= 0;Rplus0 <= 1;
+	#10 $stop;
+end                                                   
+endmodule
+
