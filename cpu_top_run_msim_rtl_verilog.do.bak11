@@ -16,7 +16,7 @@ vmap work rtl_work
 
 vlog "D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo"
 
-vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/AddressLogic.v}
+vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/ProgramCounter.v}
 
 vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim {D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt}
 

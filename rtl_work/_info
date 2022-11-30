@@ -8,22 +8,88 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Desktop/FPGA/cputop_student/simulation/modelsim
+vAddressingUnit
+Z1 !s110 1669809333
+!i10b 1
+!s100 k[Q>j>eJe5eM3EZ7Bm<8Q1
+IJI3?>;`16J>6[GS6i;YP53
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1477737358
+8D:/Desktop/FPGA/cputop_student/AddressingUnit.v
+FD:/Desktop/FPGA/cputop_student/AddressingUnit.v
+L0 8
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1669809333.382000
+!s107 D:/Desktop/FPGA/cputop_student/AddressingUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/AddressingUnit.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student
+n@addressing@unit
+vAddressingUnit_vlg_tst
+R1
+!i10b 1
+!s100 i_@ffMT3bml4goN3D7DMO1
+I@JBifQC5k2U@2Ki=o[>VT2
+R2
+R0
+w1669809156
+8D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt
+FD:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt
+L0 28
+R3
+r1
+!s85 0
+31
+!s108 1669809333.542000
+!s107 D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim|D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim
+n@addressing@unit_vlg_tst
+vAddressLogic
+R1
+!i10b 1
+!s100 4n82z5U]lgleh<Pc;hZD<0
+IPZ`MmS52U@FjgbHgU=T[W2
+R2
+R0
+w1669483407
+8D:/Desktop/FPGA/cputop_student/AddressLogic.v
+FD:/Desktop/FPGA/cputop_student/AddressLogic.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1669809333.229000
+!s107 D:/Desktop/FPGA/cputop_student/AddressLogic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/AddressLogic.v|
+!i113 1
+R4
+R5
+n@address@logic
 vPLL
-Z1 !s110 1669484403
+!s110 1669809332
 !i10b 1
 !s100 >aJV0Bk=>h3ih6>c2AM113
 I33<QfE=L=HZ<0jcY@06hK3
-Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R2
 R0
 w1473385686
 8D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo
 FD:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo
 L0 31
-Z3 OV;L;10.3d;59
+R3
 r1
 !s85 0
 31
-!s108 1669484403.470000
+!s108 1669809332.734000
 !s107 D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo|
 !s90 -reportprogress|300|D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo|
 !i113 1
@@ -43,32 +109,10 @@ R3
 r1
 !s85 0
 31
-!s108 1669484403.612000
+!s108 1669809333.066000
 !s107 D:/Desktop/FPGA/cputop_student/ProgramCounter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/ProgramCounter.v|
 !i113 1
-Z4 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student
-n@program@counter
-vProgramCounter_vlg_tst
-R1
-!i10b 1
-!s100 HICa^dP4TzIYHLUV`VRJX0
-IiXkedX@ae@NN6X0hEb5GN1
-R2
-R0
-w1669431734
-8D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt
-FD:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt
-L0 28
-R3
-r1
-!s85 0
-31
-!s108 1669484403.700000
-!s107 D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim|D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt|
-!i113 1
 R4
-!s92 -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim
-n@program@counter_vlg_tst
+R5
+n@program@counter

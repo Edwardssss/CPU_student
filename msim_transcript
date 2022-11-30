@@ -23,42 +23,64 @@
 # 
 # vlog "D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo"
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 01:40:03 on Nov 27,2022
+# Start time: 19:55:32 on Nov 30,2022
 # vlog -reportprogress 300 D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo 
 # -- Compiling module PLL
 # 
 # Top level modules:
 # 	PLL
-# End time: 01:40:03 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 19:55:32 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/ProgramCounter.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 01:40:03 on Nov 27,2022
+# Start time: 19:55:33 on Nov 30,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/ProgramCounter.v 
 # -- Compiling module ProgramCounter
 # 
 # Top level modules:
 # 	ProgramCounter
-# End time: 01:40:03 on Nov 27,2022, Elapsed time: 0:00:00
+# End time: 19:55:33 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim {D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt}
+# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/AddressLogic.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 01:40:03 on Nov 27,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim" D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt 
-# -- Compiling module ProgramCounter_vlg_tst
+# Start time: 19:55:33 on Nov 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/AddressLogic.v 
+# -- Compiling module AddressLogic
 # 
 # Top level modules:
-# 	ProgramCounter_vlg_tst
-# End time: 01:40:03 on Nov 27,2022, Elapsed time: 0:00:00
+# 	AddressLogic
+# End time: 19:55:33 on Nov 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/AddressingUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:55:33 on Nov 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/AddressingUnit.v 
+# -- Compiling module AddressingUnit
+# 
+# Top level modules:
+# 	AddressingUnit
+# End time: 19:55:33 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ProgramCounter_vlg_tst
+# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim {D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:55:33 on Nov 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim" D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt 
+# -- Compiling module AddressingUnit_vlg_tst
+# 
+# Top level modules:
+# 	AddressingUnit_vlg_tst
+# End time: 19:55:33 on Nov 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  AddressingUnit_vlg_tst
 # vsim -gui "+altera" -l msim_transcript -do "cpu_top_run_msim_rtl_verilog.do" 
-# Start time: 01:40:03 on Nov 27,2022
-# Loading work.ProgramCounter_vlg_tst
+# Start time: 19:55:34 on Nov 30,2022
+# Loading work.AddressingUnit_vlg_tst
+# Loading work.AddressingUnit
 # Loading work.ProgramCounter
+# Loading work.AddressLogic
 # 
 # add wave *
 # view structure
@@ -66,10 +88,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt(54)
-#    Time: 660 ps  Iteration: 0  Instance: /ProgramCounter_vlg_tst
-# Break in Module ProgramCounter_vlg_tst at D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt line 54
-# Simulation Breakpoint: Break in Module ProgramCounter_vlg_tst at D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt line 54
-# MACRO ./cpu_top_run_msim_rtl_verilog.do PAUSED at line 28
-# End time: 01:42:31 on Nov 27,2022, Elapsed time: 0:02:28
+# ** Note: $stop    : D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt(75)
+#    Time: 55 ps  Iteration: 0  Instance: /AddressingUnit_vlg_tst
+# Break in Module AddressingUnit_vlg_tst at D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt line 75
+# Simulation Breakpoint: Break in Module AddressingUnit_vlg_tst at D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt line 75
+# MACRO ./cpu_top_run_msim_rtl_verilog.do PAUSED at line 30
+# End time: 20:00:06 on Nov 30,2022, Elapsed time: 0:04:32
 # Errors: 0, Warnings: 0
