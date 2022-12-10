@@ -17,7 +17,7 @@
 // suit user's needs .Comments are provided in each section to help the user    
 // fill out necessary details.                                                  
 // *****************************************************************************
-// Generated on "09/09/2016 14:51:52"
+// Generated on "12/09/2022 14:54:41"
                                                                                 
 // Verilog Test Bench template for design : cpu_top
 // 
@@ -44,14 +44,15 @@ cpu_top i1 (
 	.in(in),
 	.out(out)
 );
-initial                                                
-begin                                                  
-clk=0;in=8'd5;
-ExternalReset=1;
-#10 ExternalReset=0;
-#30 ExternalReset=1;
-#6000 $stop;
-end 
-always  #5 clk=~clk;                                                     
-endmodule
 
+initial begin
+	clk <= 1'b0;
+	ExternalReset <= 1'b0;
+	in <= 8'b0000_0111;
+	#5 ExternalReset <= 1'b1;
+end
+
+always@(*) begin
+	#5 clk <= ~clk;
+end
+endmodule

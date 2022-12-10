@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Desktop/FPGA/cputop_student/simulation/modelsim
 vAddressingUnit
-Z1 !s110 1670030716
+Z1 !s110 1670636763
 !i10b 1
 !s100 d@OFORNljPmVDLA[J]0zS0
 IFHTe[=g23`gA0RXGBZUC63
@@ -23,43 +23,21 @@ Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1670030716.175000
+!s108 1670636763.620000
 !s107 D:/Desktop/FPGA/cputop_student/AddressingUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/AddressingUnit.v|
 !i113 1
 Z4 o-vlog01compat -work work
 Z5 !s92 -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student
 n@addressing@unit
-vAddressingUnit_vlg_tst
-R1
-!i10b 1
-!s100 i_@ffMT3bml4goN3D7DMO1
-I@JBifQC5k2U@2Ki=o[>VT2
-R2
-R0
-w1669809156
-8D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt
-FD:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt
-L0 28
-R3
-r1
-!s85 0
-31
-!s108 1670030716.259000
-!s107 D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim|D:/Desktop/FPGA/cputop_student/simulation/modelsim/AddressingUnit.vt|
-!i113 1
-R4
-!s92 -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim
-n@addressing@unit_vlg_tst
 vAddressLogic
 R1
 !i10b 1
-!s100 4n82z5U]lgleh<Pc;hZD<0
-IPZ`MmS52U@FjgbHgU=T[W2
+!s100 PBSjLnkG?Q01iDE@eB<X33
+I4I=nTh_RSC7m@H`Xi>`^B3
 R2
 R0
-w1669483407
+w1670635966
 8D:/Desktop/FPGA/cputop_student/AddressLogic.v
 FD:/Desktop/FPGA/cputop_student/AddressLogic.v
 L0 8
@@ -67,21 +45,150 @@ R3
 r1
 !s85 0
 31
-!s108 1670030716.090000
+!s108 1670636763.523000
 !s107 D:/Desktop/FPGA/cputop_student/AddressLogic.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/AddressLogic.v|
 !i113 1
 R4
 R5
 n@address@logic
+vArithmeticUnit
+R1
+!i10b 1
+!s100 CU0Kl]<di^CZjo96O5UH00
+II2>gihVN2>`?4PWLHz3C<0
+R2
+R0
+w1669272875
+8D:/Desktop/FPGA/cputop_student/ArithmeticUnit.v
+FD:/Desktop/FPGA/cputop_student/ArithmeticUnit.v
+L0 21
+R3
+r1
+!s85 0
+31
+!s108 1670636763.418000
+!s107 D:/Desktop/FPGA/cputop_student/ArithmeticUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/ArithmeticUnit.v|
+!i113 1
+R4
+R5
+n@arithmetic@unit
+vcontrol
+R1
+!i10b 1
+!s100 _H`VVBc:VH_bHl91dli7;1
+I8OQ^FQna:b[]GiK;zS5SY1
+R2
+R0
+w1670633831
+8D:/Desktop/FPGA/cputop_student/control.v
+FD:/Desktop/FPGA/cputop_student/control.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1670636763.277000
+!s107 D:/Desktop/FPGA/cputop_student/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/control.v|
+!i113 1
+R4
+R5
+vcpu
+R1
+!i10b 1
+!s100 :gO_S=aJzd8V88EWfcfXS2
+I7Q@dL1hd96VzSlkE_YBK12
+R2
+R0
+w1670636430
+8D:/Desktop/FPGA/cputop_student/cpu.v
+FD:/Desktop/FPGA/cputop_student/cpu.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1670636763.172000
+!s107 D:/Desktop/FPGA/cputop_student/cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/cpu.v|
+!i113 1
+R4
+R5
+vcpu_vlg_tst
+R1
+!i10b 1
+!s100 ]WfUA?E7M^@5zhJC[1cHA2
+IcUZ@]nVdzg6@2hG<lV_E61
+R2
+R0
+w1670570048
+8D:/Desktop/FPGA/cputop_student/simulation/modelsim/cpu.vt
+FD:/Desktop/FPGA/cputop_student/simulation/modelsim/cpu.vt
+L0 28
+R3
+r1
+!s85 0
+31
+!s108 1670636763.723000
+!s107 D:/Desktop/FPGA/cputop_student/simulation/modelsim/cpu.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim|D:/Desktop/FPGA/cputop_student/simulation/modelsim/cpu.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim
+vDataPath
+R1
+!i10b 1
+!s100 [PFE@75DhcWXZM_4B>7bO3
+I>7n?i9@@FE^3NBF^O@S5o1
+R2
+R0
+w1670636294
+8D:/Desktop/FPGA/cputop_student/DataPath.v
+FD:/Desktop/FPGA/cputop_student/DataPath.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1670636763.074000
+!s107 D:/Desktop/FPGA/cputop_student/DataPath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/DataPath.v|
+!i113 1
+R4
+R5
+n@data@path
+vInstrunctionRegister
+Z6 !s110 1670636762
+!i10b 1
+!s100 6@N=V`66dei[2SkJO]6>92
+IXA>9dX;E3]@A@ohhzRUoJ3
+R2
+R0
+w1477737422
+8D:/Desktop/FPGA/cputop_student/InstrunctionRegister.v
+FD:/Desktop/FPGA/cputop_student/InstrunctionRegister.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1670636762.977000
+!s107 D:/Desktop/FPGA/cputop_student/InstrunctionRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/InstrunctionRegister.v|
+!i113 1
+R4
+R5
+n@instrunction@register
 vPLL
-!s110 1670030715
+R6
 !i10b 1
 !s100 >aJV0Bk=>h3ih6>c2AM113
 I33<QfE=L=HZ<0jcY@06hK3
 R2
 R0
-w1473385686
+w1670572164
 8D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo
 FD:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo
 L0 31
@@ -89,13 +196,13 @@ R3
 r1
 !s85 0
 31
-!s108 1670030715.888000
+!s108 1670636762.497000
 !s107 D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo|
 !s90 -reportprogress|300|D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo|
 !i113 1
 n@p@l@l
 vProgramCounter
-R1
+R6
 !i10b 1
 !s100 elBo>z87QL5<k4b@;^okB1
 I]^X02:oWS251a8I@zm^7O1
@@ -109,10 +216,54 @@ R3
 r1
 !s85 0
 31
-!s108 1670030716.007000
+!s108 1670636762.875000
 !s107 D:/Desktop/FPGA/cputop_student/ProgramCounter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/ProgramCounter.v|
 !i113 1
 R4
 R5
 n@program@counter
+vRegisterFile
+R6
+!i10b 1
+!s100 E]o7KnXT2Zf;gZ:9VVRhU3
+IdCkFF6CAWi`Uh19KVP>FS1
+R2
+R0
+w1669427861
+8D:/Desktop/FPGA/cputop_student/RegisterFile.v
+FD:/Desktop/FPGA/cputop_student/RegisterFile.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1670636762.766000
+!s107 D:/Desktop/FPGA/cputop_student/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/RegisterFile.v|
+!i113 1
+R4
+R5
+n@register@file
+vStatusRegister
+R6
+!i10b 1
+!s100 VEJFJPcF>;3<JREBO@25k0
+IjX:K[MG84:ehSg4coM?>h0
+R2
+R0
+w1472522030
+8D:/Desktop/FPGA/cputop_student/StatusRegister.v
+FD:/Desktop/FPGA/cputop_student/StatusRegister.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1670636762.666000
+!s107 D:/Desktop/FPGA/cputop_student/StatusRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Desktop/FPGA/cputop_student|D:/Desktop/FPGA/cputop_student/StatusRegister.v|
+!i113 1
+R4
+R5
+n@status@register

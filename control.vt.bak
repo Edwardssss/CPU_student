@@ -1,0 +1,153 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/09/2022 09:51:56"
+                                                                                
+// Verilog Test Bench template for design : control
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module control_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg Cflag;
+reg ExternalReset;
+reg [15:0] Instruction;
+reg Zflag;
+reg clk;
+reg memDataReady;
+// wires                                               
+wire ALU_on_Databus;
+wire AaddB;
+wire AandB;
+wire AcmpB;
+wire Address_on_Databus;
+wire AmulB;
+wire AorB;
+wire AsubB;
+wire B15to0;
+wire Creset;
+wire Cset;
+wire EnablePC;
+wire IR_on_HOpndBus;
+wire IR_on_LOpndBus;
+wire IRload;
+wire PCplus1;
+wire PCplusI;
+wire RFHwrite;
+wire RFLwrite;
+wire RFright_on_OpndBus;
+wire Rd_on_AddressUnitRSide;
+wire ReadIO;
+wire ReadMem;
+wire ResetPC;
+wire Rplus0;
+wire RplusI;
+wire Rs_on_AddressUnitRSide;
+wire SRload;
+wire WriteIO;
+wire WriteMem;
+wire notB;
+wire sel_aluout_rfin;
+wire sel_rfin;
+wire shlB;
+wire shrB;
+
+// assign statements (if any)                          
+control i1 (
+// port map - connection between master ports and signals/registers   
+	.ALU_on_Databus(ALU_on_Databus),
+	.AaddB(AaddB),
+	.AandB(AandB),
+	.AcmpB(AcmpB),
+	.Address_on_Databus(Address_on_Databus),
+	.AmulB(AmulB),
+	.AorB(AorB),
+	.AsubB(AsubB),
+	.B15to0(B15to0),
+	.Cflag(Cflag),
+	.Creset(Creset),
+	.Cset(Cset),
+	.EnablePC(EnablePC),
+	.ExternalReset(ExternalReset),
+	.IR_on_HOpndBus(IR_on_HOpndBus),
+	.IR_on_LOpndBus(IR_on_LOpndBus),
+	.IRload(IRload),
+	.Instruction(Instruction),
+	.PCplus1(PCplus1),
+	.PCplusI(PCplusI),
+	.RFHwrite(RFHwrite),
+	.RFLwrite(RFLwrite),
+	.RFright_on_OpndBus(RFright_on_OpndBus),
+	.Rd_on_AddressUnitRSide(Rd_on_AddressUnitRSide),
+	.ReadIO(ReadIO),
+	.ReadMem(ReadMem),
+	.ResetPC(ResetPC),
+	.Rplus0(Rplus0),
+	.RplusI(RplusI),
+	.Rs_on_AddressUnitRSide(Rs_on_AddressUnitRSide),
+	.SRload(SRload),
+	.WriteIO(WriteIO),
+	.WriteMem(WriteMem),
+	.Zflag(Zflag),
+	.clk(clk),
+	.memDataReady(memDataReady),
+	.notB(notB),
+	.sel_aluout_rfin(sel_aluout_rfin),
+	.sel_rfin(sel_rfin),
+	.shlB(shlB),
+	.shrB(shrB)
+);
+
+`define CLK_PERIOD 200
+initial clk = 1;
+always#(`CLK_PERIOD/2) clk = ~clk;
+
+initial begin
+	ExternalReset = 1'b1;
+	Instruction = 16'd0;
+	Cflag = 1'b0;
+	Zflag = 1'b0;
+	memDataReady = 1'b0;
+	#(`CLK_PERIOD*5 + 1) ExternalReset = 1'b0;
+	memDataReady = 1'b1;
+	instruction;
+	#(`CLK_PERIOD*5)
+	$stop;
+end
+
+task instruction;
+begin
+//add
+	Instruction = 16'b1011_0100_0000_0000;
+	#(`CLK_PERIOD*4);
+	//lda
+	Instruction = 16'b0010_0100_0000_0000;
+	#(`CLK_PERIOD*4);
+	//inp
+	Instruction = 16'b0100_0100_0000_1001;
+	#(`CLK_PERIOD*4);
+	//sta
+	Instruction = 16'b0011_0100_0000_0000;
+end
+endtask

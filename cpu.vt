@@ -1,0 +1,101 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/09/2022 15:13:53"
+                                                                                
+// Verilog Test Bench template for design : cpu
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module cpu_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [15:0] Databus;
+reg ExternalReset;
+reg [15:0] IO_datain;
+reg MemDataready;
+reg clk;
+// wires                                               
+wire [15:0]  Addressbus;
+wire ReadIO;
+wire ReadMem;
+wire WriteIO;
+wire WriteMem;
+wire [15:0]  aluout;
+
+// assign statements (if any)                          
+cpu i1 (
+// port map - connection between master ports and signals/registers   
+	.Addressbus(Addressbus),
+	.Databus(Databus),
+	.ExternalReset(ExternalReset),
+	.IO_datain(IO_datain),
+	.MemDataready(MemDataready),
+	.ReadIO(ReadIO),
+	.ReadMem(ReadMem),
+	.WriteIO(WriteIO),
+	.WriteMem(WriteMem),
+	.aluout(aluout),
+	.clk(clk)
+);
+
+initial begin
+	task1;
+	task2;
+	task3;
+end
+
+task task1;
+begin
+	ExternalReset <= 1'b1;
+	repeat(1) @(posedge clk);
+	ExternalReset <= 1'b0;
+	MemDataready <= 1'b1;
+end
+endtask
+
+task task2;
+begin
+	Databus <= 16'b1111_0000_1000_0001;
+	repeat(5) @(posedge clk);
+	Databus <= 16'b1111_0001_1010_1010;
+	repeat(5) @(posedge clk);
+	Databus <= 16'b1111_0100_1111_1111;
+	repeat(5) @(posedge clk);
+	Databus <= 16'b1111_0101_0000_0001;
+	repeat(5) @(posedge clk);
+end
+endtask
+
+task task3;
+begin
+	Databus <= 16'b1011_0001_1111_1111;
+end
+endtask
+
+initial begin
+	clk <= 1'b0;
+	forever #1 clk <= ~clk;
+end
+endmodule
+
