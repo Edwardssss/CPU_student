@@ -23,141 +23,42 @@
 # 
 # vlog "D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo"
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:02 on Dec 10,2022
+# Start time: 09:40:48 on Dec 13,2022
 # vlog -reportprogress 300 D:/Desktop/FPGA/cputop_student/PLL_sim/PLL.vo 
 # -- Compiling module PLL
 # 
 # Top level modules:
 # 	PLL
-# End time: 09:46:02 on Dec 10,2022, Elapsed time: 0:00:00
+# End time: 09:40:48 on Dec 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/StatusRegister.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:02 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/StatusRegister.v 
-# -- Compiling module StatusRegister
-# 
-# Top level modules:
-# 	StatusRegister
-# End time: 09:46:02 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/RegisterFile.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:02 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/RegisterFile.v 
-# -- Compiling module RegisterFile
-# 
-# Top level modules:
-# 	RegisterFile
-# End time: 09:46:02 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/ProgramCounter.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:02 on Dec 10,2022
+# Start time: 09:40:48 on Dec 13,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/ProgramCounter.v 
 # -- Compiling module ProgramCounter
 # 
 # Top level modules:
 # 	ProgramCounter
-# End time: 09:46:02 on Dec 10,2022, Elapsed time: 0:00:00
+# End time: 09:40:48 on Dec 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/InstrunctionRegister.v}
+# 
+# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim {D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:02 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/InstrunctionRegister.v 
-# -- Compiling module InstrunctionRegister
+# Start time: 09:40:48 on Dec 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim" D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt 
+# -- Compiling module ProgramCounter_vlg_tst
 # 
 # Top level modules:
-# 	InstrunctionRegister
-# End time: 09:46:02 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/DataPath.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:03 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/DataPath.v 
-# -- Compiling module DataPath
-# 
-# Top level modules:
-# 	DataPath
-# End time: 09:46:03 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/cpu.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:03 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/cpu.v 
-# -- Compiling module cpu
-# 
-# Top level modules:
-# 	cpu
-# End time: 09:46:03 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/control.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:03 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/control.v 
-# -- Compiling module control
-# 
-# Top level modules:
-# 	control
-# End time: 09:46:03 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/ArithmeticUnit.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:03 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/ArithmeticUnit.v 
-# -- Compiling module ArithmeticUnit
-# 
-# Top level modules:
-# 	ArithmeticUnit
-# End time: 09:46:03 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/AddressLogic.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:03 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/AddressLogic.v 
-# -- Compiling module AddressLogic
-# 
-# Top level modules:
-# 	AddressLogic
-# End time: 09:46:03 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student {D:/Desktop/FPGA/cputop_student/AddressingUnit.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:03 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student" D:/Desktop/FPGA/cputop_student/AddressingUnit.v 
-# -- Compiling module AddressingUnit
-# 
-# Top level modules:
-# 	AddressingUnit
-# End time: 09:46:03 on Dec 10,2022, Elapsed time: 0:00:00
+# 	ProgramCounter_vlg_tst
+# End time: 09:40:48 on Dec 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim {D:/Desktop/FPGA/cputop_student/simulation/modelsim/cpu.vt}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 09:46:03 on Dec 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Desktop/FPGA/cputop_student/simulation/modelsim" D:/Desktop/FPGA/cputop_student/simulation/modelsim/cpu.vt 
-# -- Compiling module cpu_vlg_tst
-# 
-# Top level modules:
-# 	cpu_vlg_tst
-# End time: 09:46:03 on Dec 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ProgramCounter_vlg_tst
 # vsim -gui "+altera" -l msim_transcript -do "cpu_top_run_msim_rtl_verilog.do" 
-# Start time: 09:46:03 on Dec 10,2022
-# Loading work.cpu_vlg_tst
-# Loading work.cpu
-# Loading work.DataPath
-# Loading work.AddressingUnit
+# Start time: 09:40:48 on Dec 13,2022
+# Loading work.ProgramCounter_vlg_tst
 # Loading work.ProgramCounter
-# Loading work.AddressLogic
-# Loading work.ArithmeticUnit
-# Loading work.RegisterFile
-# Loading work.InstrunctionRegister
-# Loading work.StatusRegister
-# Loading work.control
 # 
 # add wave *
 # view structure
@@ -165,5 +66,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 09:48:27 on Dec 10,2022, Elapsed time: 0:02:24
+# ** Note: $stop    : D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt(54)
+#    Time: 660 ps  Iteration: 0  Instance: /ProgramCounter_vlg_tst
+# Break in Module ProgramCounter_vlg_tst at D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt line 54
+# Simulation Breakpoint: Break in Module ProgramCounter_vlg_tst at D:/Desktop/FPGA/cputop_student/simulation/modelsim/ProgramCounter.vt line 54
+# MACRO ./cpu_top_run_msim_rtl_verilog.do PAUSED at line 28
+# End time: 11:09:24 on Dec 13,2022, Elapsed time: 1:28:36
 # Errors: 0, Warnings: 0

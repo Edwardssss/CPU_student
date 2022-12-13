@@ -68,11 +68,9 @@ end
 initial
 begin
 in = 16'b1111000011110000;
-
 //标志位清零
 RFHwrite = 0;
 RFLwrite = 0;
-
 #10;                                           
 in = 16'b1010101010101010;Laddr = 2'b00;Raddr = 2'b00;RFHwrite = 1'b1;RFLwrite = 1'b1;
 #10; 
@@ -115,7 +113,6 @@ in = 16'b1111000011110000;Laddr = 2'b11;Raddr = 2'b11;RFHwrite = 1'b1;RFLwrite =
 in = 16'b1111000011110000;Laddr = 2'b11;Raddr = 2'b11;RFHwrite = 1'b1;RFLwrite = 1'b1; 
 #10;
 $stop;
-
 end                              
 endmodule
 
